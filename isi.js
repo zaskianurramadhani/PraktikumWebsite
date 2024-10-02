@@ -1,4 +1,5 @@
-document.writeIn("</center>");
+document.write("Belajar Pemrograman JavaScript!");
+document.writeIn("<center>");
 document.writeIn("hr width=600 color=Black>");
 document.writeIn("<h1> UNIVERSITAS LAMPUNG </h1>"); 
 document.writeIn("<h2>PENDIDIKAN TEKNOLOGI INFORMASI</h2>");
