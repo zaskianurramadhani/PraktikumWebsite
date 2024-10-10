@@ -70,12 +70,21 @@
     <footer>
         @Copyright [Zaskia Nur Ramadhani] 2024
     </footer>
-	    
-<script>
-        function cekResep() {
-            console.log('Nama resep: Resep Rendang Padang');
-        }
-    </script>
+
+	    <script>
+// Ambil elemen h1 yang berisi nama resep
+const resepNama =
+document.getElementById('resepNama').textContent;
+// Fungsi untuk menampilkan nama resep di console
+document.getElementById('cek ResepBtn').addEventListener('click', function() {
+console.log("Nama resep: ", resepNama);
+});
+
+// Fungsi untuk mencetak halaman resep
+document.getElementById('cetakResepBtn').addEventListener('click', function() {
+window.print();
+});
+</script>
 	    
 </body>
 </html>
