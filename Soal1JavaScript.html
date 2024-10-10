@@ -42,7 +42,7 @@
 <body>
 
     <!-- Judul -->
-    <h1>Resep Churros</h1>
+    <h1 id="resepNama">Resep Churros</h1>
 
     <!-- Gambar -->
     <img src="https://cdn0-production-images-kly.akamaized.net/gWlatKwT7kCm0mhPZmTGAjCHv_I=/469x260/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3223659/original/074401500_1598850155-shutterstock_1035673351.jpg" alt="Resep Churros">
@@ -50,41 +50,48 @@
     <!-- Daftar bahan -->
     <div class="ingredients">
         <h2>Bahan-bahan:</h2>
-<ol class="Bahan-Bahan">
-			<li>150 gram tepung terigu</li>
-           	<li>2 sdm margarine</li>
-           	<li>2 sdm gula pasir</li>
-           	<li>250 ml air</li>
-           	<li>1/4 sdt garam</li>
-           	<li>1/2 sdt vanilli bubuk</li>
-           	<li>1 butir telur</li>
-	</ol>
-<h2>Cara Membuat</h2>
-	<ul class="Cara Membuat">
-			<li>Masak air hingga mendidih lalu masukkan gula, garam, dan margarine. Tunggu hingga larut. Matikan kompor, masukkan tepung dan vanilli bubuk dan aduk hingga rata.</li>
-           	<li>Diamkan kurang lebih 10 menit sampai agak dingin lalu masukkan telur yang sudah dikocok dan aduk lagi hingga rata.</li>
-           	<li>Masukkan kedalam plastik segitiga dengan spuit bintang diujungnya, lalu gunting ujung plastiknya.</li>
-           	<li>panaskan minyak lalu tuang adonan kedalam minyak hingga kecoklatan.</li>
-           	<li>Angkat dan sajikan lalu bisa disantap dengan taburan gula halus atau coklat leleh.</li>
-	</ul>
+        <ol class="Bahan-Bahan">
+            <li>150 gram tepung terigu</li>
+            <li>2 sdm margarine</li>
+            <li>2 sdm gula pasir</li>
+            <li>250 ml air</li>
+            <li>1/4 sdt garam</li>
+            <li>1/2 sdt vanilli bubuk</li>
+            <li>1 butir telur</li>
+        </ol>
+    </div>
+
+    <!-- Langkah-langkah -->
+    <h2>Cara Membuat</h2>
+    <ul class="Cara Membuat">
+        <li>Masak air hingga mendidih lalu masukkan gula, garam, dan margarine. Tunggu hingga larut. Matikan kompor, masukkan tepung dan vanilli bubuk dan aduk hingga rata.</li>
+        <li>Diamkan kurang lebih 10 menit sampai agak dingin lalu masukkan telur yang sudah dikocok dan aduk lagi hingga rata.</li>
+        <li>Masukkan kedalam plastik segitiga dengan spuit bintang diujungnya, lalu gunting ujung plastiknya.</li>
+        <li>Panaskan minyak lalu tuang adonan kedalam minyak hingga kecoklatan.</li>
+        <li>Angkat dan sajikan lalu bisa disantap dengan taburan gula halus atau coklat leleh.</li>
+    </ul>
+
+    <!-- Tombol cek nama resep dan cetak resep -->
+    <button id="cekResepBtn">Cek Nama Resep</button>
+    <button id="cetakResepBtn">Cetak Resep</button>
+
     <footer>
         @Copyright [Zaskia Nur Ramadhani] 2024
     </footer>
 
-	    <script>
-// Ambil elemen h1 yang berisi nama resep
-const resepNama =
-document.getElementById('resepNama').textContent;
-// Fungsi untuk menampilkan nama resep di console
-document.getElementById('cek ResepBtn').addEventListener('click', function() {
-console.log("Nama resep: ", resepNama);
-});
+    <script>
+        // Ambil elemen h1 yang berisi nama resep
+        const resepNama = document.getElementById('resepNama').textContent;
 
-// Fungsi untuk mencetak halaman resep
-document.getElementById('cetakResepBtn').addEventListener('click', function() {
-window.print();
-});
-</script>
-	    
+        // Fungsi untuk menampilkan nama resep di console
+        document.getElementById('cekResepBtn').addEventListener('click', function() {
+            console.log("Nama resep: ", resepNama);
+        });
+
+        // Fungsi untuk mencetak halaman resep
+        document.getElementById('cetakResepBtn').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
 </body>
 </html>
